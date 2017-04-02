@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Lucky Draw
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header text-center>
+        The lucky number is:
+    </ion-card-header>
+    <ion-card-content text-center>
+      <div class="lucky-number">
+        {{luckyNumber || "?"}}
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button block="true" (click)="drawNextNumber()">Draw a number</button>
+</ion-content>
